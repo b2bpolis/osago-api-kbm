@@ -8,7 +8,7 @@ function ItSetUpMailData($data)
 
 function ItSetUpMail($mail)
 {
-    $mail->setFrom('robot@itform.kasko');
+    $mail->setFrom('no-reply@b2bpolis.ru');
     $mail->CharSet = 'UTF-8';
 }
 
@@ -17,8 +17,8 @@ function ItSetUpBody($data, $mail)
     if (empty($data))
         return false;
 
-    // $address = '4mebox@gmail.com';
-    $address = 'rm@b2bpolis.ru';
+    // Введите Ваш email
+    $address = 'test@test.ru';
     $subject = 'Заявка на страхование с сайта';
 
     $mail->addAddress($address);
